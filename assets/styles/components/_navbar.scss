@@ -1,0 +1,31 @@
+nav {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      font-family: 'rajdhani';
+      font-weight: 500;
+      font-size: 25px;
+      color: $color-white;
+      &:hover,
+      &:focus {
+        color: $color-yellow;
+      }
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+  .menu-mobile {
+    opacity: 0;
+  }
+}

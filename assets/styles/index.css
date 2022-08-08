@@ -1,0 +1,440 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@font-face {
+  font-family: "rajdhani";
+  src: url(../../fonts/Rajdhani-Regular.ttf);
+}
+@font-face {
+  font-family: "space-grotesk";
+  src: url(../../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+#hero-index .content .title {
+  font-family: "rajdhani";
+  font-weight: 500;
+  font-size: 36px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0D0E09;
+  color: #FFFFFF;
+  font-family: "space-grotesk", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.btn {
+  font-family: "rajdhani";
+  font-size: 20px;
+  color: white;
+  padding: 10px 50px;
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(70deg, rgba(237, 222, 191, 0.4) 40%, rgba(137, 0, 8, 0.4) 60%);
+  box-shadow: #0D0E09 5px 5px 60px;
+  margin-left: 20px;
+}
+.btn:hover {
+  background: linear-gradient(80deg, rgb(237, 222, 191) 40%, rgb(137, 0, 8) 60%);
+  text-shadow: 2px 2px 3px #0D0E09;
+}
+
+.btn-input {
+  font-family: "rajdhani";
+}
+
+.logo:hover,
+.hoveryellow:hover {
+  filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg) brightness(109%) contrast(112%);
+}
+
+@font-face {
+  font-family: "rajdhani";
+  src: url(../../fonts/Rajdhani-Regular.ttf);
+}
+@font-face {
+  font-family: "space-grotesk";
+  src: url(../../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+#hero-index .content .title {
+  font-family: "rajdhani";
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.up-bar {
+  position: absolute;
+  border-top: 2px solid rgba(188, 187, 189, 0.1647058824);
+  width: calc(100vw - 200px);
+  left: 100px;
+  top: 132px;
+}
+
+.left-bar,
+.right-bar {
+  position: absolute;
+  border-left: 2px solid rgba(188, 187, 189, 0.1647058824);
+  height: 820vh;
+}
+
+.left-bar {
+  left: 100px;
+}
+
+.right-bar {
+  right: 100px;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 180px;
+  right: 50px;
+}
+.scroll .social {
+  width: 30%;
+}
+.scroll img {
+  margin-top: 20px;
+}
+
+nav {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "rajdhani";
+  font-weight: 500;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+nav ul a:hover, nav ul a:focus {
+  color: #FFFF00;
+}
+nav ul a.active {
+  text-decoration: underline;
+}
+nav .menu-mobile {
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+#hero-index .content {
+  -webkit-animation: fadeInRight 1500ms ease-in-out;
+          animation: fadeInRight 1500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin: 10% auto;
+  padding-top: 140px;
+}
+#hero-index .content .title {
+  margin-bottom: 40px;
+}
+#hero-index .arrow {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  margin-top: 40rem;
+}
+
+header {
+  background-position: top-center;
+  background-image: url(../img/illustrations/Bathome1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(130vh - 30px);
+}
+
+footer {
+  margin-top: 200px;
+}
+footer .footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+footer .footer-text img {
+  margin-right: 10px;
+}
+footer .footer-social {
+  text-align: center;
+  margin-top: 40px;
+}
+footer .footer-social .social-icon {
+  padding: 15px;
+}
+footer .footer-social .social-icon .footer-logo {
+  margin-left: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.red {
+  border-top: 2px solid #B11313;
+  opacity: 0.9;
+}
+
+#batman,
+#nemesis,
+#allies,
+#justice-league,
+#multimedia {
+  margin-top: 40px;
+}
+#batman .batman-personage,
+#nemesis .batman-personage,
+#allies .batman-personage,
+#justice-league .batman-personage,
+#multimedia .batman-personage {
+  display: flex;
+  justify-content: space-between;
+}
+#batman .batman-personage div:hover,
+#nemesis .batman-personage div:hover,
+#allies .batman-personage div:hover,
+#justice-league .batman-personage div:hover,
+#multimedia .batman-personage div:hover {
+  transform: scale(1.1);
+}
+#batman .batman-personage .personage-info,
+#nemesis .batman-personage .personage-info,
+#allies .batman-personage .personage-info,
+#justice-league .batman-personage .personage-info,
+#multimedia .batman-personage .personage-info {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#batman .title,
+#nemesis .title,
+#allies .title,
+#justice-league .title,
+#multimedia .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+#batman .description,
+#nemesis .description,
+#allies .description,
+#justice-league .description,
+#multimedia .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 85%;
+  line-height: 22px;
+  font-size: 1.1rem;
+}
+
+#nemesis .head-nemesis {
+  display: flex;
+  align-items: center;
+}
+#nemesis .head-nemesis img {
+  width: 20%;
+}
+
+.omg {
+  position: relative;
+  float: right;
+  z-index: -1;
+}
+
+#multimedia button {
+  position: relative;
+  top: 150px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#multimedia button.arrow-right {
+  left: 92%;
+}
+#multimedia .slider {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 40px auto;
+}
+#multimedia .slider .slider-img {
+  width: 100%;
+}
+#multimedia .slider .slider-content {
+  padding: 15px;
+  background: linear-gradient(160deg, rgba(237, 222, 191, 0.4) 40%, rgba(25, 88, 125, 0.4) 60%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#multimedia .slider .slider-content p {
+  font-size: 14px;
+}
+#multimedia .slider .slider-content .yellow {
+  color: #FFFF00;
+  margin-left: 10px;
+}
+
+#contact-form {
+  padding: 60px 0;
+  background: linear-gradient(143deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 80%);
+}
+#contact-form .form {
+  width: 50%;
+  margin: auto;
+}
+#contact-form .form h2 {
+  font-family: "space-grotesk";
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+#contact-form .form .title {
+  font-size: 18px;
+  display: block;
+  margin: 20px 0;
+}
+#contact-form .form input[type=email],
+#contact-form .form textarea {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px 0;
+  outline: none;
+  color: #FFFFFF;
+}
+#contact-form .form .menu-btn,
+#contact-form .form .news {
+  margin-top: 15px;
+  border-bottom: 1px solid #FFFFFF;
+}
+#contact-form .form .menu-btn #dropdownlist {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 15px;
+  font-family: "space-grotesk";
+}
+#contact-form .form .menu-btn #dropdownlist .option-bg {
+  background: #0D0E09;
+}
+#contact-form .form .btn-group {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#contact-form .form .btn-group label.btn-form {
+  width: 150px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 1);
+     border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 1);
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+#contact-form .form .btn-group label.btn-form:hover {
+  background: #19587D;
+}
+#contact-form .form input[type=radio] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#contact-form .form [type=submit] {
+  margin: 35px auto;
+  display: block;
+  width: 200px;
+  border: none;
+}
+#contact-form .form ::-moz-placeholder {
+  color: #EDDEBF;
+  font-size: 15px;
+}
+#contact-form .form :-ms-input-placeholder {
+  color: #EDDEBF;
+  font-size: 15px;
+}
+#contact-form .form ::placeholder {
+  color: #EDDEBF;
+  font-size: 15px;
+}
+
+#quotes {
+  margin: 90px;
+}
+#quotes .quote-card {
+  text-align: center;
+  width: 50%;
+  margin: 30px auto;
+}
+#quotes .quote-card .author-card {
+  padding: 40px;
+  color: #C4C4C4;
+  font-family: "rajdhani";
+  font-size: 18px;
+}
+#quotes .close-quotation-mark {
+  float: right;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,32 @@
+#hero-index {
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .content {
+    animation: fadeInRight 1500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 10% auto;
+    padding-top: 140px;
+    .title {
+      @extend %title;
+      margin-bottom: 40px;
+    }
+  }
+  .arrow {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    margin-top: 40rem;
+  }
+}

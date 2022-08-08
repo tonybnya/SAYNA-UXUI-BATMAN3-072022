@@ -1,0 +1,37 @@
+// White Framing Lines
+.up-bar {
+  position: absolute;
+  border-top: 2px solid $color-line;
+  width: calc(100vw - 200px);
+  left: 100px;
+  top: 132px;
+}
+.left-bar,
+.right-bar {
+  position: absolute;
+  border-left: 2px solid $color-line;
+  height: 820vh;
+  // height: 1100vh;
+  // height: 1080px;
+}
+.left-bar {
+  left: 100px;
+}
+.right-bar {
+  right: 100px;
+}
+// Scrollbar
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 180px;
+  right: 50px;
+  .social {
+    width: 30%;
+  }
+  img {
+    margin-top: 20px;
+  }
+}

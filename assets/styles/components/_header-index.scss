@@ -1,0 +1,9 @@
+@import './hero-index';
+
+header {
+  background-position: top-center;
+  background-image: url(../img/illustrations/Bathome1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(130vh - 30px);
+}

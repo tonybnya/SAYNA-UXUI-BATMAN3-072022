@@ -1,0 +1,224 @@
+@import '../components/scrollbar';
+@import '../components/navbar';
+@import '../components/header-index';
+@import '../components/footer';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.red {
+  border-top: 2px solid $color-red;
+  opacity: .9;
+  // position: absolute;
+  // height: 1px;
+  // background: $color-red;
+  // background-image: linear-gradient(right , $color-black 2%, $color-red 50%, $color-white 98%);
+}
+
+// Common styles of batman, nemesis, allies, justice-league & multimedia Sections
+#batman,
+#nemesis,
+#allies,
+#justice-league,
+#multimedia {
+  margin-top: 40px;
+  .batman-personage {
+    display: flex;
+    justify-content: space-between;
+    div {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .personage-info {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  }
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 85%;
+    line-height: 22px;
+    font-size: 1.1rem;
+  }
+}
+
+// Header of Nemesis Section
+#nemesis {
+  .head-nemesis {
+    display: flex;
+    align-items: center;
+    img {
+      width: 20%;
+    }
+  }
+}
+
+.omg {
+  position: relative;
+  float: right;
+  z-index: -1;
+}
+
+// Styling of Multimedia Section
+#multimedia {
+  button {
+    position: relative;
+    top: 150px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &.arrow-right {
+      left: 92%;
+    }
+  }
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 40px auto;
+    .slider-img {
+      width: 100%;
+    }
+    .slider-content {
+      padding: 15px;
+      background: linear-gradient(
+        160deg,
+        rgba(237, 222, 191, 0.4) 40%,
+        rgba(25, 88, 125, 0.4) 60%
+      );
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      p {
+        font-size: 14px;
+      }
+      .yellow {
+        color: $color-yellow;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+// Styling of Contact Form Section
+#contact-form {
+  padding: 60px 0;
+  background: linear-gradient(
+    143deg,
+    rgba(237, 222, 191, 0.4),
+    rgba(25, 88, 125, 0.4) 80%
+  );
+  .form {
+    width: 50%;
+    margin: auto;
+    h2 {
+      font-family: 'space-grotesk';
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 30px;
+      letter-spacing: 4px;
+    }
+    .title {
+      font-size: 18px;
+      display: block;
+      margin: 20px 0;
+    }
+    input[type='email'],
+    textarea {
+      display: block;
+      width: 100%;
+      background: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $color-white;
+      padding: 10px 0;
+      outline: none;
+      color: $color-white;
+    }
+    .menu-btn,
+    .news {
+      margin-top: 15px;
+      border-bottom: 1px solid $color-white;
+    }
+    .menu-btn {
+      #dropdownlist {
+        width: 100%;
+        background: transparent;
+        border: none;
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 100;
+        margin-top: 15px;
+        font-family: 'space-grotesk';
+        .option-bg {
+          background: $color-black;
+        }
+      }
+    }
+    .btn-group {
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      label {
+        &.btn-form {
+          width: 150px;
+          border: 2px solid;
+          border-image: linear-gradient(
+            45deg,
+            rgba(237, 222, 191, 0.4),
+            rgba(25, 88, 125, 0.4) 1
+            );
+          font-size: 20px;
+          padding: 10px;
+          margin-top: 15px;
+          text-align: center;
+          cursor: pointer;
+          &:hover {
+            background: $color-blue;
+          }
+        }
+      }
+    }
+    input[type='radio'] {
+      opacity: 0;
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+    [type='submit'] {
+      margin: 35px auto;
+      display: block;
+      width: 200px;
+      border: none;
+    }
+    ::placeholder {
+      color: $color-gradient-00;
+      font-size: 15px;
+    }
+  }
+}
+// Styling of Quotes Section
+#quotes {
+  margin: 90px;
+  .quote-card {
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    .author-card {
+      padding: 40px;
+      color: $color-gray;
+      font-family: 'rajdhani';
+      font-size: 18px;
+    }
+  }
+  .close-quotation-mark {
+    float: right;
+  }
+}

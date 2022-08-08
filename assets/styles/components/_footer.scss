@@ -1,0 +1,23 @@
+footer {
+  margin-top: 200px;
+  .footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .footer-social {
+    text-align: center;
+    margin-top: 40px;
+    .social-icon {
+      padding: 15px;
+      .footer-logo {
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import '../components/scrollbar';
+@import '../components/navbar';
+@import '../components/header_game';
+@import '../components/footer';
+
+html {
+  scroll-behavior: smooth;
+}
